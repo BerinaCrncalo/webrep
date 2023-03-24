@@ -1,7 +1,7 @@
 <?
 $servername = "127.0.0.1" ;
 $username = "root" ;
-$password = "databaseproject" ;
+$password = "database" ;
 $schema = "lab3_db" ;
 
 try {
@@ -18,3 +18,4 @@ try {
     echo "Connection failed : " . $e->getMessage();
 }
 ?>
+

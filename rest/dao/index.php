@@ -1,4 +1,6 @@
 <?php
+
+
 require 'vendor/autoload.php';
 require 'rest/dao/UserDao.class.php';
 
@@ -10,7 +12,6 @@ Flight::register('userDao', 'UserDao');
 
 
 Flight::start();
-
 Flight::route('GET /api/users', function(){
     Flight::json(Flight::userDao()->getUsers());
 });
@@ -37,7 +38,6 @@ Flight::route('PUT /api/users/@id', function($id){
 Flight::route('DELETE /api/users/@id', function($id){
     Flight::userDao()->deleteUser($id);
 });
-
 
 
 ?>
